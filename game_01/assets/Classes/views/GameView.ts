@@ -486,9 +486,17 @@ export class GameView {
             return;
         }
         const elapsedSec = (this._hudPause.nowMsForTimer() - this._levelStartMs) / 1000;
-        if (!this._controller.tryMarkWin(elapsedSec)) {
+        if (this._controller.tryMarkWin(elapsedSec)) {
+            this._showWinDialog();
             return;
         }
-        this._showWinDialog();
+        if (
+            this._controller.timedOut &&
+            this._controller.isReady &&
+            this._controller.model.isBoardEmpty() &&
+            !this._root.getChildByName('failOverlay')?.isValid
+        ) {
+            this._showFailDialog();
+        }
     }
 }

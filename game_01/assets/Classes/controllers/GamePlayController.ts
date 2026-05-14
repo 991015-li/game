@@ -258,6 +258,10 @@ export class GamePlayController {
     /**
      * 主牌清空且尚未结算时：始终写入评星；仅在本局由「上一关已通」的进度条件入局时
      * 才调用 {@link PlayerProgressService.recordLevelClearedIfBetter}（仅凭金币解锁入局时通关不改变邻关进度锁）。
+     *
+     * 与 `GameViewTimerDialogs.maybeFireTimeUp` / HUD 一致：**已用秒数 ≥ {@link effectiveTimeLimitSec} 时不判胜**
+     *（例如最后一手飞牌结束前计时已到期）；此时置 {@link timedOut}，由视图走失败流程。
+     *
      * @param elapsedSeconds 从进入本关界面起的累计秒数（可含小数），用于评星
      * @returns 本次是否完成胜利结算；为 `true` 时视图应展示胜利 UI
      */
@@ -266,6 +270,10 @@ export class GamePlayController {
             return false;
         }
         if (!this._model.isBoardEmpty()) {
+            return false;
+        }
+        if (!Number.isFinite(elapsedSeconds) || elapsedSeconds >= this.effectiveTimeLimitSec) {
+            this._timedOut = true;
             return false;
         }
         this._winDispatched = true;
