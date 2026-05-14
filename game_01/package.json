@@ -1,0 +1,10 @@
+{
+  "name": "card_game",
+  "uuid": "e9f8a7b6-c5d4-4321-abcd-ef1234567890",
+  "creator": {
+    "version": "3.8.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

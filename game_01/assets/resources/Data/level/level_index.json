@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "levels": [
+    {
+      "id": 1,
+      "name": "关卡1",
+      "file": "Data/level/level_001.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/joystick.png",
+      "chapter": 1,
+      "order": 1,
+      "unlock": { "type": "prev_cleared", "prevId": 0 }
+    },
+    {
+      "id": 2,
+      "name": "关卡2",
+      "file": "Data/level/level_002.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/trophy.png",
+      "chapter": 1,
+      "order": 2,
+      "unlock": { "type": "prev_cleared", "prevId": 1 }
+    },
+    {
+      "id": 3,
+      "name": "关卡3",
+      "file": "Data/level/level_003.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/star.png",
+      "chapter": 1,
+      "order": 3,
+      "unlock": { "type": "prev_cleared", "prevId": 2 }
+    },
+    {
+      "id": 4,
+      "name": "关卡4",
+      "file": "Data/level/level_004.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/puzzle.png",
+      "chapter": 1,
+      "order": 4,
+      "unlock": { "type": "prev_cleared", "prevId": 3 }
+    },
+    {
+      "id": 5,
+      "name": "关卡5",
+      "file": "Data/level/level_005.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/rubiks-cube.png",
+      "chapter": 1,
+      "order": 5,
+      "unlock": { "type": "prev_cleared", "prevId": 4 }
+    },
+    {
+      "id": 6,
+      "name": "关卡6",
+      "file": "Data/level/level_006.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/slot-machine.png",
+      "chapter": 1,
+      "order": 6,
+      "unlock": { "type": "prev_cleared", "prevId": 5 }
+    },
+    {
+      "id": 7,
+      "name": "关卡7",
+      "file": "Data/level/level_007.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/roulette.png",
+      "chapter": 1,
+      "order": 7,
+      "unlock": { "type": "prev_cleared", "prevId": 6 }
+    },
+    {
+      "id": 8,
+      "name": "关卡8",
+      "file": "Data/level/level_008.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/coins.png",
+      "chapter": 1,
+      "order": 8,
+      "unlock": { "type": "prev_cleared", "prevId": 7 }
+    },
+    {
+      "id": 9,
+      "name": "关卡9",
+      "file": "Data/level/level_009.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/dice.png",
+      "chapter": 1,
+      "order": 9,
+      "unlock": { "type": "prev_cleared", "prevId": 8 }
+    },
+    {
+      "id": 10,
+      "name": "关卡10",
+      "file": "Data/level/level_010.json",
+      "selectIconUrl": "https://img.icons8.com/fluency/96/medal.png",
+      "chapter": 1,
+      "order": 10,
+      "unlock": { "type": "prev_cleared", "prevId": 9 }
+    }
+  ]
+}

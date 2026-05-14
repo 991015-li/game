@@ -1,0 +1,40 @@
+{
+  "id": 9,
+  "meta": { "undoLimit": 2, "wildLimit": 6 },
+  "hand": {
+    "initialTop": { "rank": 5, "suit": "C", "faceUp": true }
+  },
+  "board": {
+    "columns": [
+      {
+        "stack": [
+          { "rank": 9, "suit": "S", "faceUp": false },
+          { "rank": 6, "suit": "H", "faceUp": false },
+          { "rank": 4, "suit": "C", "faceUp": true }
+        ]
+      },
+      {
+        "stack": [
+          { "rank": 3, "suit": "S", "faceUp": false },
+          { "rank": 7, "suit": "C", "faceUp": false },
+          { "rank": 10, "suit": "D", "faceUp": false },
+          { "rank": 9, "suit": "D", "faceUp": true }
+        ]
+      },
+      {
+        "stack": [
+          { "rank": 8, "suit": "S", "faceUp": false },
+          { "rank": 4, "suit": "D", "faceUp": false },
+          { "rank": 1, "suit": "H", "faceUp": false },
+          { "rank": 13, "suit": "H", "faceUp": true }
+        ]
+      },
+      {
+        "stack": [
+          { "rank": 2, "suit": "D", "faceUp": false },
+          { "rank": 12, "suit": "D", "faceUp": true }
+        ]
+      }
+    ]
+  }
+}

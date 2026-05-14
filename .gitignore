@@ -1,0 +1,14 @@
+# Cocos Creator 生成与缓存
+game_01/library/
+game_01/temp/
+game_01/local/
+game_01/build/
+game_01/node_modules/
+game_01/.creator/
+
+# 本地 IDE
+game_01/.cursor/
+
+# 系统文件
+.DS_Store
+Thumbs.db

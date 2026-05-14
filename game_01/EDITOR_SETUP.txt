@@ -1,0 +1,12 @@
+Cocos Creator 3.8.8 — 打开 D:\cocos\card_game
+
+1) 用 Creator 打开本目录，等待资源与脚本编译完成（控制台无持续红色报错）。
+
+2) 确认菜单：项目 -> 项目设置 中「启动场景」为 Main（若首次打开未设，在资源里右击 Main.scene 可设为启动场景）。
+
+3) 再点「浏览器预览」。
+
+说明：Main.scene 已挂上 GameBootstrap（与 assets/scripts/GameBootstrap.ts.meta 的 UUID 一致）。
+若仍出现 Missing class，请完全退出 Creator 后删除本目录下的 library 与 temp，再重新打开工程等待导入结束。
+
+旧工程路径：D:\cocos\card_crash（可保留作备份，日常开发可用本 card_game 工程）。
